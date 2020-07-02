@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox fx:id="vbox" alignment="CENTER" prefHeight="350.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox prefHeight="25.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets left="100.0" right="100.0" />
+         </VBox.margin>
+         <children>
+            <Label text="您的姓名：">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="25.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets left="100.0" right="100.0" />
+         </VBox.margin>
+         <children>
+            <Label text="您的邮箱：">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="mail" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="400.0">
+         <children>
+            <TextField fx:id="failPath" disable="true" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="300.0" />
+            <Button mnemonicParsing="false" onAction="#chooseFail" prefWidth="100.0" text="选择文件" />
+         </children>
+         <VBox.margin>
+            <Insets left="100.0" right="100.0" />
+         </VBox.margin>
+      </HBox>
+      <Button fx:id="re" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#enter" prefHeight="25.0" prefWidth="400.0" text="计算">
+         <padding>
+            <Insets left="100.0" right="100.0" />
+         </padding>
+      </Button>
+      <Label fx:id="num">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="g">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="sum">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>
